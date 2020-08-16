@@ -37,11 +37,10 @@ Partial Class Form1
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripBtb_About = New System.Windows.Forms.ToolStripButton()
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.lbl_Start = New System.Windows.Forms.Label()
-        Me.ToolStripBtb_About = New System.Windows.Forms.ToolStripButton()
         Me.GroupBox_TimeDelay.SuspendLayout()
         CType(Me.NumericUpDown_Time_Delay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip2.SuspendLayout()
@@ -151,7 +150,7 @@ Partial Class Form1
         'ToolStrip2
         '
         Me.ToolStrip2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripSeparator1, Me.ToolStripBtb_About, Me.ToolStripButton1})
+        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripSeparator1, Me.ToolStripBtb_About})
         Me.ToolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.ToolStrip2.Location = New System.Drawing.Point(0, 152)
         Me.ToolStrip2.Name = "ToolStrip2"
@@ -171,13 +170,15 @@ Partial Class Form1
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 23)
         '
-        'ToolStripButton1
+        'ToolStripBtb_About
         '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 4)
-        Me.ToolStripButton1.Text = "AHBakri.com"
+        Me.ToolStripBtb_About.BackColor = System.Drawing.Color.Transparent
+        Me.ToolStripBtb_About.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripBtb_About.Image = Global.Auto_Typer_by_AHBakri.com.My.Resources.Resources.Info
+        Me.ToolStripBtb_About.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripBtb_About.Name = "ToolStripBtb_About"
+        Me.ToolStripBtb_About.Size = New System.Drawing.Size(23, 20)
+        Me.ToolStripBtb_About.Text = "About"
         '
         'lbl_Start
         '
@@ -188,16 +189,6 @@ Partial Class Form1
         Me.lbl_Start.TabIndex = 39
         Me.lbl_Start.Text = "3. Click the Start button and then click on the text area."
         Me.lbl_Start.Visible = False
-        '
-        'ToolStripBtb_About
-        '
-        Me.ToolStripBtb_About.BackColor = System.Drawing.Color.Transparent
-        Me.ToolStripBtb_About.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripBtb_About.Image = Global.Auto_Typer_by_AHBakri.com.My.Resources.Resources.Info
-        Me.ToolStripBtb_About.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripBtb_About.Name = "ToolStripBtb_About"
-        Me.ToolStripBtb_About.Size = New System.Drawing.Size(23, 20)
-        Me.ToolStripBtb_About.Text = "About"
         '
         'Form1
         '
@@ -236,7 +227,6 @@ Partial Class Form1
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents ToolStripLabel3 As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripBtb_About As ToolStripButton
     Friend WithEvents ToolTip2 As ToolTip
     Friend WithEvents Timer2 As Timer
